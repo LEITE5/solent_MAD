@@ -1,8 +1,8 @@
-package com.example.week1;
+package com.example.week_1;
 
-import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
-        import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import android.widget.TextView;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
