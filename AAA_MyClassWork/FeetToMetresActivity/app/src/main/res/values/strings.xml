@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Feet To Meters Activity</string>
     <string name="convertBtn">Convert!</string>
-    <string name="tv2">Feet:</string>
 </resources>
