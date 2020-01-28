@@ -10,8 +10,11 @@
         android:layout_height="40pt">
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    >
          <TextView
+             android:paddingLeft="10px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Latitude"
@@ -26,12 +29,16 @@
 
 </LinearLayout>
 <LinearLayout
+    android:layout_below="@id/layout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:id="@+id/layout2"
 
     >
 
         <TextView
+
+            android:paddingLeft="10px"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Longitude"/>
@@ -43,16 +50,18 @@
             android:layout_weight="1"
             />
 </LinearLayout>
-        <Button
-            android:id="@+id/btn"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:layout_toEndOf="@id/et2"
-            android:text="Go"
-            />
+
 
     </RelativeLayout>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toEndOf="@id/et2"
+        android:text="Go"
+        android:layout_below="@id/layout2"
 
+        />
     <org.osmdroid.views.MapView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -62,6 +71,7 @@
         android:clickable="true"
         android:id="@+id/map1"
         tilesource="Mapnik"
+
         />
 
 
